@@ -1,14 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
-    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="https://placeBird.com/96/139"
+      type="image/x-icon"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <h1>RavenPhotoApp</h1>
+      <section>
+        <p>
+          I enjoy cute birds,
+          <a href="https://en.wikipedia.org/wiki/Common_raven">ravens</a>
+          especially!
+        </p>
 
-</body>
+        <p>
+          You can see more pics in my
+          <a href="gallery.html">gallery</a>
+        </p>
+
+        <a href="gallery.html">
+          <img
+            src="img/RavensInSnow.webp"
+            alt="Ravens play in snow."
+            width="300"
+            height="300"
+        /></a>
+      </section>
+      <section>
+        <h2>Raven lists</h2>
+        <h3>Top 3 things ravens hate most:</h3>
+        <ul>
+          <li>logic games</li>
+          <li>shiny objects</li>
+          <li>nuts</li>
+        </ul>
+        <figure>
+          <img
+            src="img/Nuts.jpeg"
+            alt="Raven with nut"
+            width="300"
+            height="300"
+          />
+          <figcaption>
+            Ravens
+            <em>love</em>
+            nuts
+          </figcaption>
+        </figure>
+        <h3>Top 3 things ravens hate most:</h3>
+        <ol>
+          <li>loneliness</li>
+          <li>loud sudden noises</li>
+          <li>strangers</li>
+        </ol>
+        <figure>
+          <img
+            src="img/RavenAttack.jpg"
+            alt="Raven attack dude"
+            width="300"
+            height="300"
+          />
+          <figcaption>
+            Ravens
+            <strong>hate</strong>
+            strangers
+          </figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>Raven form</h2>
+
+        <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>Is you raven indoor or outdoor?</legend>
+            <label for="indoor"
+              ><input
+                id="indoor"
+                type="radio"
+                name="indoor-outdoor"
+                value="indoor"
+                checked
+              />
+              Indoor</label
+            >
+            <label for="outdoor"
+              ><input
+                id="outdoor"
+                type="radio"
+                name="indoor-outdoor"
+                value="outdoor"
+              />
+              Outdoor</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend>What's you raven personality?</legend>
+            <label for="Trickster"
+              ><input
+                id="trickster"
+                type="checkbox"
+                name="personality"
+                value="trickster"
+              />
+              Trickster</label
+            >
+
+            <label for="Observer"
+              ><input
+                id="observer"
+                type="checkbox"
+                name="personality"
+                value="observer"
+              />
+              Observer</label
+            >
+            <label for="Social Butterfly"
+              ><input
+                id="socialButterfly"
+                type="checkbox"
+                name="personality"
+                value="socialButterfly"
+              />
+              Social Butterfly</label
+            >
+          </fieldset>
+          <input type="text" placeholder="raven photo URL" required />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
